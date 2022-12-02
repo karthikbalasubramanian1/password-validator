@@ -1,2 +1,1 @@
 # password-validator
-
