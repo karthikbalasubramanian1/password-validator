@@ -1,5 +1,7 @@
-package com.example.domain;
+package com.example.domain.criteria;
 
+import com.example.domain.CriteriaResult;
+import com.example.domain.Password;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

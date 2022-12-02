@@ -1,5 +1,7 @@
 package com.example.domain;
 
+import com.example.domain.criteria.*;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,7 @@
-package com.example.domain;
+package com.example.domain.criteria;
+
+import com.example.domain.CriteriaResult;
+import com.example.domain.Password;
 
 import java.util.Optional;
 
