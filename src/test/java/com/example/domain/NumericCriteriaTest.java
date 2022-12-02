@@ -17,7 +17,7 @@ class NumericCriteriaTest {
     @DisplayName("Validate violation of upper case")
     void testInvalidNumeric() {
         Password password = Password.createPassword("password");
-        ValidationResult result = new NumericCriteria().validate(password);
+        CriteriaResult result = new NumericCriteria().validate(password);
         Assertions.assertFalse(result.isValid());
         Assertions.assertEquals("Password should have at least one number", result.getResult());
     }

@@ -12,7 +12,7 @@ import static lombok.AccessLevel.PRIVATE;
  */
 @Getter
 @AllArgsConstructor(access = PRIVATE)
-public class ValidationResult {
+public class CriteriaResult {
     /**
      *  Status of the validation criteria
      *  true for successful validation, false for any violation in criteria
@@ -26,14 +26,14 @@ public class ValidationResult {
     /**
      *  Creates a Validation result representing a successful validation of criteria
      */
-    public static ValidationResult createSuccessResult() {
-        return new ValidationResult(true, "");
+    public static CriteriaResult createSuccessResult() {
+        return new CriteriaResult(true, "");
     }
 
     /**
      *  Creates a Validation result representing a failure of validation of criteria
      */
-    public static ValidationResult createFailureResult(final String error) {
-        return new ValidationResult(false, Optional.ofNullable(error).orElse(""));
+    public static CriteriaResult createFailureResult(final String error) {
+        return new CriteriaResult(false, Optional.ofNullable(error).orElse(""));
     }
 }

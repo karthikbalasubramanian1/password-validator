@@ -17,7 +17,7 @@ class LowerCaseCriteriaTest {
     @DisplayName("Validate violation of lower case")
     void testInvalidLowerCase() {
         Password password = Password.createPassword("ASD");
-        ValidationResult result = new LowerCaseCriteria().validate(password);
+        CriteriaResult result = new LowerCaseCriteria().validate(password);
         Assertions.assertFalse(result.isValid());
         Assertions.assertEquals("Password should have at least one lowercase", result.getResult());
     }

@@ -5,5 +5,5 @@ package com.example.domain;
  */
 public interface PasswordCriteria {
 
-    ValidationResult validate(Password password);
+    CriteriaResult validate(Password password);
 }
